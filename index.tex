@@ -1,0 +1,249 @@
+\documentclass[14pt]{article}
+\usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tabto}
+\begin{document}
+
+%\hspace{10cm}\text{Name:________________________}
+%\textbf{Name :                        }\hspace*{12cm}
+%\textbf{Roll No :                        }\\
+\begin{center}
+\large{\textbf{Government College of Engineering Kannur\\}}
+\large{\textbf{Department of Computer Science and Engineering\\}}
+\large{\textbf{CSD334: Mini-Project\\}}
+\end{center}
+
+\begin{center}
+\small{\textbf{\underline{ Project Proposal}\\}}
+\end{center}
+
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|cccc|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Proposal Prepared By}}                        \\ \hline
+\multicolumn{1}{|c|}{Sl No.} & \multicolumn{1}{c|}{KTU Reg No.} & \multicolumn{1}{c|}{Name of Student}              & Signature of Student \\ \hline
+\multicolumn{1}{|c|}{1}      & \multicolumn{1}{c|}{KNR22CS01}   & \multicolumn{1}{c|}{Abhina Saseendran} &           \\ \hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{KNR22CS02} & \multicolumn{1}{c|}{Abhinav Anil K} &  \\ \hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{KNR22CS03} & \multicolumn{1}{c|}{Abhinav Raj P V} &  \\ \hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{KNR22CS04} & \multicolumn{1}{c|}{Abhishek S R} &  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{enumerate}
+\item Project Title : \textbf{Lost and Found}
+\item Problem Statement \\
+\tabto{.5cm}Existing lost and found management systems suffer from fragmentation and
+inefficiency due to their reliance on outdated methods such as physical notice
+boards and disparate online platforms. This lack of a centralized and accessible
+platform hinders the timely and effective reporting of lost items by users and found
+items by finders. Consequently, individuals experiencing loss and those who have
+found items encounter difficulties in navigating the process, resulting in prolonged
+periods of uncertainty and decreased chances of successful item recovery.\\
+\tabto{.5cm} Our project aims to address the inefficiencies and challenges of traditional lost and found systems by developing a user-friendly, single-page web application designed to manage lost and found items.
+\item Solution approach \\
+\tabto{.5cm}Our proposed exam evaluation system will streamline the examination process, from creation to evaluation, ensuring accuracy and security. Below are the key features and functionalities.
+\begin{enumerate}
+\item \textbf{User Registration and Authentication}
+\begin{itemize}
+\item Users can join as a student or teacher by creating accounts or logging in using existing credentials.
+\item Authentication ensures secure access to the system.
+\end{itemize}
+\item \textbf{Room Creation and Exam Setting}
+\begin{itemize}
+\item Examiners can create exam rooms and upload question papers.
+\item Features include specifying exam dates and durations.
+\end{itemize}
+\item \textbf{Platform-Independent compiler and Proctored UI}
+\begin{itemize}
+\item The system includes a platform-independent compiler interface for seamless access on any device.
+\item A proctored UI prevents students from copying or switching tabs during the examination.
+\end{itemize}
+\item \textbf{AI Partial Output Detection}
+\begin{itemize}
+\item An AI-powered module evaluates student's code for partial correctness.
+\item This ensures fair grading even if the solution is incomplete but correct to some extent.
+\end{itemize}
+\item \textbf{Student-Wise Report Generation}
+\begin{itemize}
+\item The system generates detailed results for each student.
+\item Results can be downloaded in PDF format for easy sharing and record-keeping.
+\end{itemize}
+\item \textbf{Centralized Database}
+\begin{itemize}
+\item A centralized database stores information about exams, subjects, dates, and student reports.
+\item MySQL or a similar relational database management system (RDBMS) is used for efficient data management.
+\end{itemize}
+\item \textbf{User Notifications}
+\begin{itemize}
+\item Automated notifications inform students about exam schedules and results.
+\item Alerts are sent via email or SMS for timely updates.
+\end{itemize}
+\end{enumerate}
+
+
+\item Does any other solution already exist for the stated problem? If yes, give details.
+\begin{itemize}
+\item Yes, there are existing solutions for exam evaluation, but they often suffer from various limitations.
+\begin{enumerate}
+\item Manually Conducted Exams
+\begin{itemize}
+\item {Limitations}
+\begin{itemize}
+\item Time-Consuming: Teachers must manually check each system for output verification, which is inefficient.  
+\item No Proper Partial Output Verification: Results are assessed as correct or incorrect, without acknowledging partial correctness.  
+\item System Variability: Each system may behave differently due to inconsistent configurations, causing discrepancies in output.  
+\end{itemize}
+\end{itemize}
+\item Online Exam Platforms
+\begin{itemize}
+\item HackerRank
+\item {Limitations}
+\begin{itemize}
+\item No Partial Output Detection: Unable to evaluate partially correct solutions, which is essential for fair assessment in coding exams.  
+\item Not Best for College Lab Exams: The platform is better suited for corporate hiring assessments than for educational settings.  
+\item Limited Offline Support: Requires constant internet connectivity, which can be a challenge for some labs.  
+\end{itemize}
+\item HackerEarth
+\item {Limitations}
+\begin{itemize}
+\item High Cost: Not affordable for all educational institutions.  
+\item Complex Setup: Requires significant technical expertise for exam creation and management.  
+\end{itemize}
+\item Other Online Platforms
+\item {Limitations}
+\begin{itemize}
+\item Lack of AI Features: Many do not offer advanced features like AI-based partial output evaluation.  
+\item Limited Customization: Few platforms allow fully tailored exams to suit specific academic needs.  
+\item Proctoring Gaps: Some platforms have limited proctoring features, increasing the risk of cheating.  
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+\item A centralized, AI-powered exam evaluation system with robust proctoring, partial output detection, and seamless integration for college labs can effectively address these limitations.
+\end{itemize}
+
+
+\item In what way is your proposed solution better than the existing solution(s)?\\
+\tabto{.5cm}Our proposed solution for lost and found management offers several advantages
+over existing methods.
+\begin{enumerate}
+\item \textbf{Centralized Platform}
+\begin{itemize}
+\item Unlike physical notice boards and fragmented online platforms, our single-page web application provides a centralized platform.
+\item Users can report lost items and finders can report found items from one location, streamlining the process.
+\end{itemize}
+\item \textbf{Accessibility}
+\begin{itemize}
+\item Our web application is accessible to anyone with an internet connection.
+\item No need for physical presence or multiple app downloads, increasing the
+chances of reuniting lost items with owners.
+\end{itemize}
+\item \textbf{User-Friendly Interface}
+\begin{itemize}
+\item We prioritize a simple, intuitive interface for reporting lost and found
+items. 
+\item Features like easy image uploads enhance user experience and encourage
+participation.
+\end{itemize}
+\item \textbf{Comprehensive Information}
+\begin{itemize}
+\item Users can provide detailed descriptions and images of lost items.
+\item Finders report items through provided contact information, facilitating
+swift communication.
+\end{itemize}
+\item \textbf{Efficiency}
+\begin{itemize}
+\item Streamlined reporting and centralized management reduce time and effort for users and administrators. 
+\item Quicker responses and higher recovery rates compared to fragmented
+solutions.
+\end{itemize}
+\end{enumerate}
+\item List out the stakeholders of the proposed project.
+\begin{enumerate}
+\item \textbf{Users}
+\begin{itemize}
+\item Individuals who report lost items or find items.
+\item Interact directly with the application.
+\item Search for lost items and provide feedback.
+\end{itemize}
+\item \textbf{Administrators}
+\begin{itemize}
+\item Responsible for managing the application. 
+\item Moderate content and ensure smooth operation.
+\item Handle user inquiries and maintain system integrity. 
+\end{itemize}
+\item \textbf{Community/Institution}
+\begin{itemize}
+\item Organizations where the application is deployed
+\item Provide support, resources, or endorsement.
+\end{itemize}
+\end{enumerate}
+\item What will be the impact of this project work on society directly or indirectly?\\
+\tabto{.5cm}The impact of a lost and found website on society can be significant, both directly
+and indirectly.
+\begin{enumerate}
+\item \textbf{Direct Impact}
+\begin{itemize}
+\item \textbf{Efficiency} : The website can help individuals quickly locate lost items,
+reducing the time and effort spent on searching through traditional methods like calling businesses or physically visiting lost and found offices.
+\item \textbf{Convenience} : Users can report lost items and check for found items at any
+time from the comfort of their homes, making the process more convenient
+and accessible.
+\item \textbf{Emotional Relief} : Losing valuable items can be distressing. The ability to
+easily search for lost items and potentially have them returned can provide emotional relief and reduce stress for individuals
+\end{itemize}
+\item \textbf{Indirect Impact}
+\begin{itemize}
+\item \textbf{Reduced Waste} : By facilitating the return of lost items, the website can
+help reduce unnecessary waste. Instead of replacing lost items, individuals can reclaim them, leading to less consumption and a smaller environmental
+footprint.
+\item \textbf{Economic Benefits} : Avoiding the need to replace lost items can save
+individuals money, leading to potential economic benefits for both
+individuals and businesses.
+\item \textbf{Safety} : Returning lost items promptly can contribute to public safety by
+preventing potential hazards or accidents associated with misplaced items, such as lost identification documents or personal belongings.
+\end{itemize}
+\end{enumerate}
+\tabto{.5cm} Overall, the project's impact on society can enhance efficiency, convenience, and
+community engagement while indirectly contributing to environmental sustainability, economic savings, safety, and trust within the community.
+\item What technologies do you plan to use for the front-end and back-end?
+\begin{enumerate}
+\item \textbf{Front-end (Client-side)} :
+\begin{itemize}
+\item \textbf{React.js} : A JavaScript library for building user interfaces. It allows developers
+to create reusable UI components and manage the state of the application
+efficiently
+\end{itemize}
+\item \textbf{Back-end (Server-side)} :
+\begin{itemize}
+\item \textbf{Node.js} : A JavaScript runtime environment that allows developers to run
+JavaScript code on the server-side. It provides an event-driven architecture that is well-suited for building scalable and high-performance server applications.
+\item \textbf{Express.js} : A web application framework for Node.js. It provides a robust set
+of features for building web servers and APIs, including middleware support,
+routing, and HTTP utilities
+\end{itemize}
+\item \textbf{Database} :
+\begin{itemize}
+\item \textbf{MongoDB} : A NoSQL database that stores data in a flexible, JSON-like format.
+It is schema-less, allowing developers to store and retrieve data without a predefined schema. MongoDB is commonly used in MERN stack applications due to its flexibility and scalability.
+\end{itemize}
+\tabto{.5cm} Together, these technologies form the MERN stack, which provides a comprehensive solution for building our web applications with a JavaScript-based
+technology stack
+\end{enumerate}
+
+\end{enumerate}
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|cll|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Proposal Approved By}}                                                                   \\ \hline
+\multicolumn{1}{|c|}{Name of Guide} & \multicolumn{1}{c|}{Signature of Guide} & \multicolumn{1}{c|}{Date of Approval} \\ \hline
+\multicolumn{1}{|l|}{Dr. Rafeeque P C}              & \multicolumn{1}{l|}{}                   &                                       \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
+
