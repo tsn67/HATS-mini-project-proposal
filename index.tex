@@ -24,9 +24,9 @@
 \hline
 \multicolumn{4}{|c|}{\textbf{Proposal Prepared By}}                        \\ \hline
 \multicolumn{1}{|c|}{Sl No.} & \multicolumn{1}{c|}{KTU Reg No.} & \multicolumn{1}{c|}{Name of Student}              & Signature of Student \\ \hline
-\multicolumn{1}{|c|}{1}      & \multicolumn{1}{c|}{KNR22CS08}   & \multicolumn{1}{c|}{Amarnath Panneri} &           \\ \hline
+\multicolumn{1}{|c|}{1}      & \multicolumn{1}{c|}{KNR22CS008}   & \multicolumn{1}{c|}{Amarnath Panneri} &           \\ \hline
 \multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{KNR22CS043} & \multicolumn{1}{c|}{Muhammed Hanoon Zameel} &  \\ \hline
-\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{KNR22CS062} & \multicolumn{1}{c|}{Swalih.T} &  \\ \hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{KNR22CS062} & \multicolumn{1}{c|}{Swalih T} &  \\ \hline
 \multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{KNR22CS065} & \multicolumn{1}{c|}{Tom Sebastain} &  \\ \hline
 \end{tabular}
 \end{center}
@@ -40,7 +40,7 @@
 The absence of a centralized platform complicates processes like code evaluation, test case validation, and reporting. Limited feedback mechanisms and manual report generation hinder efficiency and fairness.
 
 A dedicated lab exam management system is needed to enable teachers to create online programming exams, provide students with an integrated code editor for writing and testing, evaluate submissions based on test case correctness, and use AI for partial evaluation. It should also streamline report generation, ensuring accurate and efficient assessments.\\
-\tabto{.5cm} Our project aims to address the inefficiencies and challenges of traditional lost and found systems by developing a user-friendly, single-page web application designed to manage lost and found items.
+
 \item Solution approach \\
 \tabto{.5cm}Our proposed exam evaluation system will streamline the examination process, from creation to evaluation, ensuring accuracy and security. Below are the key features and functionalities.
 \begin{enumerate}
@@ -124,40 +124,45 @@ A dedicated lab exam management system is needed to enable teachers to create on
 
 
 \item In what way is your proposed solution better than the existing solution(s)?\\
-\tabto{.5cm}Our proposed solution for lost and found management offers several advantages
-over existing methods.
+\tabto{.5cm}Our proposed solution for online examination management offers several advantages over existing methods.
 \begin{enumerate}
-\item \textbf{Centralized Platform}
+\item \textbf{Advanced Anti-Cheating Techniques}
 \begin{itemize}
-\item Unlike physical notice boards and fragmented online platforms, our single-page web application provides a centralized platform.
-\item Users can report lost items and finders can report found items from one location, streamlining the process.
+\item Most platforms, including ETLab, focus on online proctoring or basic monitoring methods, which can often be bypassed.
+\item Our proposed application incorporates robust anti-cheating measures such as tab-locking technology, real-time notifications for unauthorized activity, and automatic banning for rule violations, ensuring a secure and fair examination environment, even in offline settings.
 \end{itemize}
-\item \textbf{Accessibility}
+
+\item \textbf{Centralized Timing Mechanism}
 \begin{itemize}
-\item Our web application is accessible to anyone with an internet connection.
-\item No need for physical presence or multiple app downloads, increasing the
-chances of reuniting lost items with owners.
+\item The application utilizes a centralized API to synchronize the start time for all participants.
+\item This ensures a uniform experience and eliminates timing-related issues.
 \end{itemize}
-\item \textbf{User-Friendly Interface}
+
+\item \textbf{Comprehensive Result Table Generation}
 \begin{itemize}
-\item We prioritize a simple, intuitive interface for reporting lost and found
-items. 
-\item Features like easy image uploads enhance user experience and encourage
-participation.
+\item The application automatically generates a detailed PDF report with comprehensive analytics, including individual and group performance metrics.
+\item Faculty can quickly assess outcomes without manual intervention.
 \end{itemize}
-\item \textbf{Comprehensive Information}
+
+\item \textbf{AI-Driven Feedback for Students}
 \begin{itemize}
-\item Users can provide detailed descriptions and images of lost items.
-\item Finders report items through provided contact information, facilitating
-swift communication.
+\item Other platforms lack personalized insights into students' weak areas and improvement strategies.
+\item Our application uses AI to analyze performance and provide targeted suggestions for improvement, empowering students with actionable insights for skill enhancement.
 \end{itemize}
-\item \textbf{Efficiency}
+
+\item \textbf{Uniform Coding Environment}
 \begin{itemize}
-\item Streamlined reporting and centralized management reduce time and effort for users and administrators. 
-\item Quicker responses and higher recovery rates compared to fragmented
-solutions.
+\item Other platforms may allow students to use their preferred compilers, which can lead to inconsistencies in results.
+\item Our application ensures all students use the same compiler, maintaining uniformity in coding environments and evaluation.
+\end{itemize}
+
+\item \textbf{Post-Exam Solution Access}
+\begin{itemize}
+\item Facilitates faculty to upload correct answers.
+\item Students can review and self-evaluate their performance after the exam.
 \end{itemize}
 \end{enumerate}
+
 \item List out the stakeholders of the proposed project.
 \begin{enumerate}
     \item \textbf{Users}
@@ -209,30 +214,28 @@ solutions.
 \tabto{.5cm}The impact of a lost and found website on society can be significant, both directly
 and indirectly.
 \begin{enumerate}
-\item \textbf{Direct Impact}
+\item \textbf{Direct Impacts}
 \begin{itemize}
-\item \textbf{Efficiency} : The website can help individuals quickly locate lost items,
-reducing the time and effort spent on searching through traditional methods like calling businesses or physically visiting lost and found offices.
-\item \textbf{Convenience} : Users can report lost items and check for found items at any
-time from the comfort of their homes, making the process more convenient
-and accessible.
-\item \textbf{Emotional Relief} : Losing valuable items can be distressing. The ability to
-easily search for lost items and potentially have them returned can provide emotional relief and reduce stress for individuals
-\end{itemize}
-\item \textbf{Indirect Impact}
+\item \textbf{Enhanced Examination Integrity} : Anti-cheating features like tab restrictions and notifications ensure a fair evaluation process.
+\item \textbf{Improved Efficiency for Faculty} : Automatic evaluation and report generation save time and effort for faculties, enabling them to focus on teaching and curriculum improvement.
+\item \textbf{Uniform Experience} : A centralized API ensures synchronized exam start times, regardless of device or location, creating a standardized experience for all students.
+\item \textbf{Personalized Feedback for Students} : AI-driven suggestions provide targeted improvement tips, enabling students to focus on weak areas.
+\item \textbf{Scalable Solution} : The application can be deployed across diverse environments, such as computer labs and mobile classrooms, making it adaptable to various institutions.
+\item \textbf{Accessible Results and Analytics} : Faculty and students have access to detailed performance analytics, which can be used for curriculum adjustments and self-evaluation.
+\end{itemize}   
+\item \textbf{Indirect Impacts}
 \begin{itemize}
-\item \textbf{Reduced Waste} : By facilitating the return of lost items, the website can
-help reduce unnecessary waste. Instead of replacing lost items, individuals can reclaim them, leading to less consumption and a smaller environmental
-footprint.
-\item \textbf{Economic Benefits} : Avoiding the need to replace lost items can save
-individuals money, leading to potential economic benefits for both
-individuals and businesses.
-\item \textbf{Safety} : Returning lost items promptly can contribute to public safety by
-preventing potential hazards or accidents associated with misplaced items, such as lost identification documents or personal belongings.
+\item \textbf{Reduced Administrative Load} : Faculties spend less time on administrative tasks, allowing them to engage in more strategic activities like curriculum development.
+\item \textbf{Improved Student Performance} : Immediate feedback and detailed solutions help students learn from mistakes, potentially boosting overall academic performance.
+\item \textbf{Enhanced Digital Literacy} : Regular exposure to coding exams and digital tools enhances students' technical proficiency and readiness for real-world scenarios.
+\item \textbf{Increased Trust in the Examination Process} : Transparent evaluation and anti-cheating measures build trust among students, faculty, and institutions.
+\item \textbf{Encouragement of Ethical Practices} : Discouraging cheating fosters a culture of honesty and accountability in academic settings.
+\item \textbf{Institutional Reputation Boost} : Institutions adopting such innovative solutions may gain a competitive edge and improve their reputation among stakeholders.
+\item \textbf{Data-Driven Decisions} : Analytics from the application can guide decision-making for curriculum adjustments, identifying trends in student performance and challenges.
+\item \textbf{Environmental Impact} : Transitioning to digital examinations reduces the need for paper-based exams, contributing to sustainability.
 \end{itemize}
 \end{enumerate}
-\tabto{.5cm} Overall, the project's impact on society can enhance efficiency, convenience, and
-community engagement while indirectly contributing to environmental sustainability, economic savings, safety, and trust within the community.
+    
 \item What technologies do you plan to use for the front-end and back-end?
 \begin{enumerate}
 \item \textbf{Front-end (Client-side)} :
